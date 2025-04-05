@@ -1,0 +1,30 @@
+@use "../../styles/helpers/" as *;
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__content {
+    background: white;
+    padding: rem(20);
+    border-radius: rem(8);
+    position: relative;
+  }
+
+  &__btn {
+    position: absolute;
+    top: rem(-17);
+    right: rem(-17);
+    border: none;
+    background: transparent;
+    font-size: 18px;
+    cursor: pointer;
+  }
+}
