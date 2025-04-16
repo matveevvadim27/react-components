@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  width: 100%;
+  margin-inline: auto;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  width: 100%;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid rgb(201, 197, 197);
+  padding: 40px;
+  border-radius: 10px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.form__show {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+}
+
+input:not(#show_pass) {
+  font-size: 16px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  outline: 1px solid rgb(134, 114, 248);
+}
+
+input:focus:not(#show_pass) {
+  outline: 2px solid rgb(134, 114, 248);
+}
+
+button {
+  font-size: 16px;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: inherit;
+  border: none;
+  outline: 1px solid rgb(134, 114, 248);
+  border-radius: 5px;
+}
+button:hover {
+  outline: 2px solid rgb(134, 114, 248);
+}
+
+p {
+  margin-top: 5px;
+}
+
+.error {
+  color: red;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: -1px !important;
+  border: 0 !important;
+  padding: 0 !important;
+  white-space: nowrap !important;
+  clip-path: inset(100%) !important;
+  clip: rect(0 0 0 0) !important;
+  overflow: hidden !important;
+}
